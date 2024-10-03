@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled />
+        <div class="botones">
+            <button onclick="limpiarPantalla()">C</button>
+            <button onclick="agregarAPantalla('/')">÷</button>
+            <button onclick="agregarAPantalla('*')">×</button>
+            <button onclick="agregarAPantalla('-')">-</button>
+
+            <button onclick="agregarAPantalla('7')">7</button>
+            <button onclick="agregarAPantalla('8')">8</button>
+            <button onclick="agregarAPantalla('9')">9</button>
+            <button onclick="agregarAPantalla('+')">+</button>
+
+            <button onclick="agregarAPantalla('4')">4</button>
+            <button onclick="agregarAPantalla('5')">5</button>
+            <button onclick="agregarAPantalla('6')">6</button>
+            <button id="igual" onclick="calcularResultado()">=</button>
+
+            <button onclick="agregarAPantalla('1')">1</button>
+            <button onclick="agregarAPantalla('2')">2</button>
+            <button onclick="agregarAPantalla('3')">3</button>
+            <button onclick="agregarAPantalla('0')">0</button>
+            <button onclick="agregarAPantalla('.')">.</button> 
+            <button onclick="borrarUltimoDigito()">←</button> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
